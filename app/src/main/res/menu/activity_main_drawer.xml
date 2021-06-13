@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/bcc"
+            android:title="@string/bbc"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/bcc"
+            android:title="@string/abp"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/bcc"
+            android:title="@string/fox_news"
+            android:menuCategory="secondary"/>
+
+        <item
+            android:id="@+id/aaj"
+            android:icon="@drawable/bcc"
+            android:title="@string/aaj_tak"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/contact"
+            android:title="@string/contact"
+            android:menuCategory="secondary"
+            android:icon="@drawable/bcc"
+            ></item>
+
+    </group>
+    <group>
+        <item android:title="@string/upcomming"
+            android:menuCategory="secondary">
+            <menu>
+                <item
+                    android:id="@+id/up"
+                    android:title="@string/rajasthan_news"
+                    android:menuCategory="secondary"></item>
+            </menu>
+        </item>
+    </group>
+</menu>

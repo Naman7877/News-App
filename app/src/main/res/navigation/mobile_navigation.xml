@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.newsapp.ui.Bbc.HomeFragment"
+        android:label="@string/bbc"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_aaj"
+            app:destination="@id/aaj" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.newsapp.ui.Avp.GalleryFragment"
+        android:label="@string/avp"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.newsapp.ui.fox.SlideshowFragment"
+        android:label="@string/fox_news"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <!--fragment id same as menu/main drawable item id-->
+    <fragment
+
+
+        android:id="@+id/aaj"
+        android:name="com.example.newsapp.fragments.Aaj_tak"
+        android:label="@string/aaj_tak"
+        tools:layout="@layout/fragment_aaj_tak" />
+    <fragment
+        android:id="@+id/contact"
+        android:name="com.example.newsapp.fragments.contact_us"
+        android:label="fragment_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+</navigation>
